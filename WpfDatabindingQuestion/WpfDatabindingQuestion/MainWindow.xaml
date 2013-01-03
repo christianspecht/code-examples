@@ -5,6 +5,7 @@
     <Grid>
         <StackPanel>
             <Button Content="MessageBox" Command="{Binding MessageCommand}" Height="50"></Button>
+            <Button Content="Simulate external device" Command="{Binding DeviceCommand}" Height="50" Margin="0 10"></Button>
         </StackPanel>
     </Grid>
 </Window>
