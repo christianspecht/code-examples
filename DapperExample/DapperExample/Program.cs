@@ -12,7 +12,18 @@ namespace DapperExample
             {
                 var list = con.Query<Product>("select * from products");
 
+                Console.WriteLine("map to a strongly typed list:");
                 foreach (var item in list)
+                {
+                    Console.WriteLine(item.ProductNumber + " : " + item.Description);
+                }
+
+                Console.WriteLine();
+
+                var list2 = con.Query("select * from products");
+
+                Console.WriteLine("map to a list of dynamic objects:");
+                foreach (var item in list2)
                 {
                     Console.WriteLine(item.ProductNumber + " : " + item.Description);
                 }
