@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<p>default header for all gallery pages</p>
+
+{% for gallery in site.data.galleries %}
+  {% if gallery.id == page.galleryid %}
+    <h1>{{ gallery.description }}</h1>
+    {% for image in gallery.images %}
+      <img src="{{ gallery.imagefolder }}/{{ image.thumb }}">
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+<p>default footer for all gallery pages</p>
