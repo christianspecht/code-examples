@@ -11,3 +11,16 @@
   - name: image-3.jpg
     thumb: thumb-3.jpg
     text: The third image
+- id: anothergallery
+  description: This is even another gallery!
+  imagefolder: /img/demopage
+  images:
+  - name: image-4.jpg
+    thumb: thumb-4.jpg
+    text: Another gallery, first image
+  - name: image-5.jpg
+    thumb: thumb-5.jpg
+    text: Another gallery, second image
+  - name: image-6.jpg
+    thumb: thumb-6.jpg
+    text: Another gallery, third image
