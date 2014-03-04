@@ -3,4 +3,8 @@ layout: default
 title: Galleries (main page)
 ---
 
-Main page
+### Available galleries:
+
+{% for gallery in site.data.galleries %}
+- [{{ gallery.description }}]({{ gallery.id }})
+{% endfor %}
