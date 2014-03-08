@@ -1,3 +1,8 @@
+---
+layout: default
+title: Jekyll/Lightbox2 example
+---
+
 ## Demo project how to build a Jekyll page with a Lightbox 2 gallery
 
 For more information and step-by-step instructions, read this blog post:  
