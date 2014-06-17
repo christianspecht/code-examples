@@ -1,3 +1,3 @@
-This repository contains demo/example code for Stack Overflow questions.
+This repository contains demo/example code for blog posts, Stack Overflow questions etc.
 
 See the readme files in the sub-directories for more info!
