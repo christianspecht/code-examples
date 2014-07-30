@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+</head>
+<body>
+
+<h2>Navigation:</h2>
+
+{% include nav.html nav=site.data.menu %}
+
+<hr>
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+</body>
+</html>
