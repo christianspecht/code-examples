@@ -14,3 +14,5 @@
   subitems:
     - text: Second menu (sub)
       url: /second-menu/second-menu-sub/
+- text: Sitemap
+  url: /sitemap/

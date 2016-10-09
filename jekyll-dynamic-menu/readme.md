@@ -1,1 +1,1 @@
-Demo project for the blog post [Building a pseudo-dynamic tree menu with Jekyll](http://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-with-jekyll/).
+Demo project for the blog posts [Building a pseudo-dynamic tree menu with Jekyll](http://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-with-jekyll/) and [Jekyll dynamic tree menu: show the whole menu at once](http://christianspecht.de/2016/10/09/jekyll-dynamic-tree-menu-show-the-whole-menu-at-once/).
