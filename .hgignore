@@ -1,6 +1,0 @@
-syntax: glob
-_site
-*.suo
-*.user
-bin
-obj
