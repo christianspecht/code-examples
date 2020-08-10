@@ -1,7 +1,10 @@
-{{ with .Page.Resources.ByType "image" }}
+{{ $image := (.Page.Resources.ByType "image") }}
+{{ with $image }}
     <ul>
     {{ range . }}
-    <li>{{ .Permalink }}</li>
+    {{ $resized := .Fill "150x115 q20" }}
+    <li>{{ .Permalink }}
+        {{ $resized.Permalink }}</li>
     {{ end }}
     </ul>
 {{ end }}
