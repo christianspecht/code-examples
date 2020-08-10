@@ -1,0 +1,5 @@
+.nested-img img {
+ width:auto;
+ max-width:none;
+ display:inline;
+}

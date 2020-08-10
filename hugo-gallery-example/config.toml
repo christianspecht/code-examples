@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke" 
 sectionPagesMenu = "main" 
+
+[params]
+custom_css = ["css/_styles.css"]
