@@ -7,7 +7,9 @@
 {{ with $image }}
     {{ range . }}
     {{ $resized := .Fill "150x115 q20" }}
-	{{ $withlogo := .Filter (images.Overlay $logo 10 10)}}
+    {{ $x := sub .Width (add $logo.Width 10) }}
+    {{ $y := sub .Height (add $logo.Height 10) }}
+    {{ $withlogo := .Filter (images.Overlay $logo $x $y)}}
     <a href="{{ $withlogo.Permalink }}" data-lightbox="x" data-title="{{ with .Exif }}{{ .Tags.ImageDescription }}{{ end }}"><img src="{{ $resized.Permalink }}" /></a>
     {{ end }}
 {{ end }}
