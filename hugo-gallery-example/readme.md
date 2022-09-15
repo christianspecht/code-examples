@@ -3,6 +3,7 @@
 Blog posts with more information:
 - [Creating an image gallery with Hugo and Lightbox2](https://christianspecht.de/2020/08/10/creating-an-image-gallery-with-hugo-and-lightbox2/)
 - [Hugo/Lightbox image gallery: Loading image captions from EXIF data](https://christianspecht.de/2022/06/29/hugo-lightbox-image-gallery-loading-image-captions-from-exif-data/)
+- [Hugo/Lightbox image gallery: Overlay images with logo](https://christianspecht.de/2022/09/15/hugo-lightbox-image-gallery-overlay-images-with-logo/)
 
 Tested with Hugo version 0.69.2 and 0.91.2.
 
