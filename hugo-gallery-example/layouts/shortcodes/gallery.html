@@ -2,10 +2,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
 
+{{ $logo := resources.Get "img/overlay-logo.png" }}
 {{ $image := (.Page.Resources.ByType "image") }}
 {{ with $image }}
     {{ range . }}
     {{ $resized := .Fill "150x115 q20" }}
-    <a href="{{ .Permalink }}" data-lightbox="x" data-title="{{ with .Exif }}{{ .Tags.ImageDescription }}{{ end }}"><img src="{{ $resized.Permalink }}" /></a>
+	{{ $withlogo := .Filter (images.Overlay $logo 10 10)}}
+    <a href="{{ $withlogo.Permalink }}" data-lightbox="x" data-title="{{ with .Exif }}{{ .Tags.ImageDescription }}{{ end }}"><img src="{{ $resized.Permalink }}" /></a>
     {{ end }}
 {{ end }}
